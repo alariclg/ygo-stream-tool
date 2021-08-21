@@ -40,7 +40,7 @@
         <div class="col-sm-6">Player 2 LP</div>
         <div class="col-sm-6">
           <input
-            @input="(e) => setValue(e, 'p2-name')"
+            @input="(e) => setValue(e, 'p2-lp')"
             class="form-control"
             type="text"
           />
