@@ -20,21 +20,9 @@
 import Players from './components/Players.vue'
 import Cards from './components/Cards.vue'
 
-import { app } from '@electron/remote'
-import { ref } from 'vue'
-// import fs from 'fs'
-// import pathModule from 'path'
-
 export default {
   components: { Players, Cards },
-  setup() {
-    // get Current file folder
-    const path = ref(app.getAppPath())
-
-    console.log(path)
-
-    return {}
-  }
+  setup() {}
 }
 </script>
 

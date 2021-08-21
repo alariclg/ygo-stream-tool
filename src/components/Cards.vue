@@ -54,7 +54,14 @@
       </div>
       <div class="row mt-2">
         <div class="col-sm-9 offset-3">
-          <button type="button" class="btn btn-dark">Load image</button>
+          <button
+            type="button"
+            :disabled="!currentCard"
+            @click="saveSelected"
+            class="btn btn-dark"
+          >
+            Load image
+          </button>
         </div>
       </div>
     </div>
@@ -64,6 +71,8 @@
 <script>
 import axios from 'axios'
 import config from '../config'
+
+const { ipcRenderer } = require('electron')
 
 export default {
   data() {
@@ -98,7 +107,11 @@ export default {
       this.currentCard = card
     },
 
-    saveSelected() {},
+    saveSelected() {
+      if (this.currentCard) {
+        ipcRenderer.send('save-card', this.getImage(this.currentCard))
+      }
+    },
 
     getImage(card) {
       if (card.card_images) {
