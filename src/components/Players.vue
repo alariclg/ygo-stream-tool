@@ -1,10 +1,8 @@
 <template>
-  <div>
+  <div class="card">
     <div class="row">
-      <div class="col-sm-12">
-        <h2>
-          Players
-        </h2>
+      <div class="col-sm-12 text-center">
+        <h2>Players</h2>
       </div>
       <div class="row mb-2 mt-2">
         <div class="col-sm-6">Player 1 Name</div>

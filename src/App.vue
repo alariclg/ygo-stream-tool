@@ -1,17 +1,14 @@
 <template>
-  <div style="background:#ddd; margin-bottom:30px">
-    <div
-      style="display:flex; align-items:center; justify-content: center; height:150px;"
-    >
-      <h1>Yu-Gi-Oh! Stream Tool</h1>
-    </div>
-  </div>
-  <div class="container mt-1">
-    <div class="row">
-      <div class="row">
-        <div class="col-md-6"><Cards /></div>
-        <div class="col-md-6"><Players /></div>
+  <div class="container">
+    <div class="row pt-4 mb-4">
+      <div class="col-md-12">
+        <h1 class="card title">Yu-Gi-Oh! Stream Tool</h1>
       </div>
+    </div>
+
+    <div class="row mt-1">
+      <div class="col-md-6"><Cards /></div>
+      <div class="col-md-6"><Players /></div>
     </div>
   </div>
 </template>
@@ -28,11 +25,16 @@ export default {
 
 <style>
 #app {
+  height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  color: #fff;
+  background: #140217;
+}
+
+.title {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

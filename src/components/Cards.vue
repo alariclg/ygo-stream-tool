@@ -1,16 +1,14 @@
 <template>
-  <div>
+  <div class="card">
     <div class="row">
-      <div class="col-sm-12">
-        <h2>
-          Cards
-        </h2>
+      <div class="col-sm-12 text-center mb-2">
+        <h2>Cards</h2>
       </div>
     </div>
     <div class="row">
       <div class="row mt-2 mb-2">
-        <div class="col-sm-3">Name</div>
-        <div class="col-sm-6">
+        <div class="col-sm-12 mb-2 text-bold">Name</div>
+        <div class="col-sm-12 mb-2">
           <input
             class="form-control"
             v-model="cardName"
@@ -18,19 +16,17 @@
             @input="onSearch"
           />
         </div>
-        <div class="col-sm-3">
-          <button type="button" @click="lang = 'fr'" class="btn btn-dark">
+        <div class="col-sm-12">
+          <button type="button" @click="lang = 'fr'" class="btn custom-btn">
             FR
           </button>
-          <button type="button" @click="lang = null" class="btn btn-dark">
+          <button type="button" @click="lang = null" class="btn custom-btn">
             EN
           </button>
         </div>
       </div>
       <div class="row mt-2 mb-2">
-        <div class="col-sm-3">
-          Previews
-        </div>
+        <div class="col-sm-3">Previews</div>
         <div class="col-sm-9">
           <ul v-if="previews" class="list-group card-list">
             <li
@@ -53,12 +49,12 @@
         </div>
       </div>
       <div class="row mt-2">
-        <div class="col-sm-9 offset-3">
+        <div class="col-sm-12 text-center">
           <button
             type="button"
             :disabled="!currentCard"
             @click="saveSelected"
-            class="btn btn-dark"
+            class="btn custom-btn"
           >
             Load image
           </button>
