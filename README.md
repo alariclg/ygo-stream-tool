@@ -1,4 +1,6 @@
 # YU-GI-OH! Streamer Tool
+This application has been created to help Yu-Gi-Oh! Streamers. 
+It may help to display easily informations about remote duel, and display cards on Screan
 
 ## 1 - Dowload the .exe in ./downloads folder
 
