@@ -1,6 +1,6 @@
 # YU-GI-OH! Streamer Tool
 
-## File are saved in a 'assets' folder installation folder.
+## File are saved in an 'assets' folder installation folder.
 
 Install the project where you want to. 
 
