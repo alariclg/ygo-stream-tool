@@ -66,6 +66,11 @@ app.on('ready', async () => {
       console.error('Vue Devtools failed to install:', e.toString())
     }
   }
+
+  if (!fs.existsSync('assets')) {
+    fs.mkdir('assets', () => {})
+  }
+
   createWindow()
 })
 
