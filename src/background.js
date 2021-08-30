@@ -26,6 +26,8 @@ async function createWindow() {
     }
   })
 
+  win.setMenuBarVisibility(false)
+
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     // Load the url of the dev server if in development mode
     await win.loadURL(process.env.WEBPACK_DEV_SERVER_URL)
@@ -74,7 +76,7 @@ ipcMain.on('save-card', (ev, url) => {
 
   request(url)
     .pipe(fs.createWriteStream('assets/card.jpg'))
-    .on('close', function() {
+    .on('close', function () {
       console.log('card', 'saved')
     })
 })
@@ -84,7 +86,7 @@ ipcMain.on('save-txt', (ev, options) => {
     fs.mkdir('assets', () => {})
   }
 
-  fs.writeFile(`assets/${options.name}.txt`, options.txt, function(err) {
+  fs.writeFile(`assets/${options.name}.txt`, options.txt, function (err) {
     console.log(options.name, 'saved')
   })
 })

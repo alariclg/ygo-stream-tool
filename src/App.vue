@@ -1,17 +1,20 @@
 <template>
-  <div style="background:#ddd; margin-bottom:30px">
-    <div
-      style="display:flex; align-items:center; justify-content: center; height:150px;"
-    >
-      <h1>Yu-Gi-Oh! Stream Tool</h1>
-    </div>
-  </div>
-  <div class="container mt-1">
-    <div class="row">
-      <div class="row">
-        <div class="col-md-6"><Cards /></div>
-        <div class="col-md-6"><Players /></div>
+  <div class="container">
+    <div class="row pt-4 mb-4">
+      <div class="col-md-12">
+        <h1 class="title">Yu-Gi-Oh! Stream Tool</h1>
       </div>
+    </div>
+
+    <div class="row mt-1">
+      <div class="col-md-6"><Cards /></div>
+      <div class="col-md-6"><Players /></div>
+    </div>
+
+    <div class="credentials">
+      Developed with ❤️ by AlaricLg -
+      <a href="twitter.com/alariclg">https://twitter.com/AlaricLg</a> -
+      <a href="github.com/alariclg">https://github.com/AlaricLg</a>
     </div>
   </div>
 </template>
@@ -19,7 +22,6 @@
 <script>
 import Players from './components/Players.vue'
 import Cards from './components/Cards.vue'
-
 export default {
   components: { Players, Cards },
   setup() {}
@@ -28,11 +30,31 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  height: 100vh;
+  font-family: 'RobotoCondensed';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  color: #fff;
+  background: linear-gradient(
+    177deg,
+    rgba(7, 56, 88, 1) 0%,
+    rgba(20, 2, 23, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 4.5rem;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'RobotoCondensedBold';
+}
+
+.credentials {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
 }
 </style>
