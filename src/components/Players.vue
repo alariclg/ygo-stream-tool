@@ -55,7 +55,7 @@
         <div class="col-sm-3">Score</div>
         <div class="col-sm-9">
           <input
-            @input="(e) => setValue(e, 'Score')"
+            @input="(e) => setValue(e, 'score')"
             class="form-control"
             type="text"
             placeholder="Ex. 0-1"
