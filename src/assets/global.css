@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url('./fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RobotoCondensedBold';
+  src: url('./fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf');
+}
+
+body {
+  background: linear-gradient(
+    177deg,
+    rgba(7, 56, 88, 1) 0%,
+    rgba(20, 2, 23, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.card {
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #252525;
+}
+
+.custom-btn {
+  background: #073858;
+  color: #fff;
+  padding: 5px 15px;
+  margin-right: 15px;
+}
+
+.custom-btn.active {
+  background: #fff;
+  color: #073858;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+input.form-control {
+  border-radius: 0px;
+}
+
+.list-group-item {
+  color: #fff;
+  background-color: transparent;
+}
