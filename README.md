@@ -1,8 +1,11 @@
+![capture](https://user-images.githubusercontent.com/13943858/131499313-554509c8-a414-4249-b720-d81e9292942b.png)
+
 # YU-GI-OH! Streamer Tool
 This application has been created to help Yu-Gi-Oh! Streamers. 
 It may help to display easily informations about remote duel, and display cards on Screan
 
 ## 1 - Dowload the .exe in ./downloads folder
+You may authorise your computer to install this project. 
 
 ## 2 - File are saved in an 'assets' folder installation folder.
 
