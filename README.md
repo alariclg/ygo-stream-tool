@@ -5,6 +5,9 @@ This application has been created to help Yu-Gi-Oh! Streamers.
 It may help to display easily informations about remote duel, and display cards on Screan
 
 ## 1 - Dowload the .exe in ./downloads folder
+or Using this links : 
+https://mega.nz/file/7J5TjCQC#1iX_qS4pAl4oMcTkvxNtveB_P8zzL60o0JH7Vqh1Awk
+
 You may authorise your computer to install this project. 
 
 ## 2 - File are saved in an 'assets' folder installation folder.
