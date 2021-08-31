@@ -30,7 +30,7 @@ export default {
 
 <style>
 #app {
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'RobotoCondensed';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -50,11 +50,5 @@ export default {
   font-size: 4.5rem;
   text-align: center;
   font-family: 'RobotoCondensedBold';
-}
-
-.credentials {
-  position: absolute;
-  bottom: 0;
-  margin: auto;
 }
 </style>
