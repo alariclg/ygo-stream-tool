@@ -19,5 +19,5 @@ You can use this assets using "Text from files" Or "Image on computer" features.
 When the content will change, Obs & Streamlabs will reload the view. 
 
 ### More about me : 
-https://twitter.com/alariclg
+https://twitter.com/alariclg -
 https://twitch.com/alariclg 
